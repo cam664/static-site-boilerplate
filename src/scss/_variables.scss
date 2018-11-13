@@ -1,0 +1,13 @@
+@function color($event, $opacity: 1) {
+  $result: '';
+  @if $event == 'race' {
+    $result: #{rgba(0, 100, 0, $opacity)}
+  } @else if $event == 'breeding' {
+    $result: #{rgba(139, 0, 0, $opacity)}
+  } @else if $event == 'event' {
+    $result: #{rgba(139, 0, 139, $opacity)}
+  } @else if $event == 'license' {
+    $result: #{rgba(184, 134, 11, $opacity)}
+  }
+  @return $result;
+}

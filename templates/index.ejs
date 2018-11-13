@@ -1,0 +1,27 @@
+<%- include('partials/HTMLHead', { title: 'Home | Wiisage' }) %>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-8">
+        <h1>Static Site Boilerplate</h1>
+        <h2>Includes:</h2>
+        <ul>
+          <li>jQuery 3.3.1</li>
+          <li>SCSS transpiling</li>
+          <li>EJS template system</li>
+          <li>All other kinds of great stuff</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<%- include('partials/HTMLScripts') %>
+<script>
+  $(document).ready(function(){
+    wiisageGlobalObj.init()
+    wiisageHomeObj.init()
+  })
+</script>
+</html>
